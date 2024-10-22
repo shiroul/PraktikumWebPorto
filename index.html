@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Praktikum Web</title>
 </head>
 <body>
-    <div class="greet">
-        <h1 align="center">HI, I'm Banana Nuget.</h1>
-        <h1 align="center">I'm full-stack web developer.</h1>
-        <img align="center" src="./assets/banana.png" alt="">
+
+    <div class="header">
+        <!-- <ul>
+            <li><a href="#aboutMe">AboutMe</a></li>
+            <li></li>
+            <li>Expertice</li>
+            <li>Experience</li>
+            <li>Learning Path</li>
+            <li>Contact</li>
+        </ul> -->
     </div>
-    <div class="aboutMe">
-        <h2>Who this guy?</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+    <div class="greet">
+        <div id="greetContent">
+            <h1 >HI, I'm Banana Nuget.</h1>
+            <h1 >I'm full-stack web developer.</h1>
+        </div>
+    </div>
+    <div class="aboutMe" id="aboutMe">
+        <div id="leftSide">
+            <img src="./assets/banana.png" alt="BananaImage">
+        </div>
+        <div id="rightSide">
+            <h2>Who this guy?</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
     </div>
 
-    <div class="orderedlist">
+    <div class="orderedlist" id="expertice">
         <h2>
-            Programing Language expertice
+            Programing Language Expertice
         </h2>
         <ol>
             <li>C++ - intermediate</li>
@@ -30,7 +48,7 @@
         </ol>
     </div>
 
-    <div class="unorderedList">
+    <div class="unorderedList" id="experience">
         <h2>Internship Experience</h2>
         <ul>
             <li>Pakthani.id</li>
@@ -67,6 +85,42 @@
                 <td>Dicoding</td>
             </tr>
         </table>
+    </div>
+
+    <div>
+
+    </div>
+
+    <div class="contact">
+        <h2>NEED MY SERVICE?</h2>
+        <div>
+            <form action="/action_page.php">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="e.g. Banana Nuget"><br>
+                <label for="lname">Email:</label><br>
+                <input type="text" id="lname" name="lname" value="e.g. Banana@nuget.com"><br><br>
+
+                <label for="service">Choose your service:</label>
+                <select id="service" name="service">
+                <option value="homework">Make Homework</option>
+                <option value="debug">Debug My Code</option>
+                <option value="custom">Custom Request</option>
+                </select>
+
+                <h3>if i want to reach you, when u available?</h3>
+                <input type="checkbox" id="weekday" name="weekday" value="weekday">
+                <label for="weekday"> Weekday</label><br>
+                <input type="checkbox" id="weekend" name="weekend" value="weekend">
+                <label for="weekend">Weekend</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+    </div>
+
+    <div>
+        <h3>Random Video With Auto Play</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k13E68cn1xM?autoplay=1&mute=1" title="YouTube video player" ></iframe>
     </div>
 
 </body>
