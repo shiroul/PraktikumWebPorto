@@ -3,124 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Praktikum Web</title>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-    <div class="header">
-        <!-- <ul>
-            <li><a href="#aboutMe">AboutMe</a></li>
-            <li></li>
-            <li>Expertice</li>
-            <li>Experience</li>
-            <li>Learning Path</li>
-            <li>Contact</li>
-        </ul> -->
-    </div>
-    <div class="greet">
+    <div class="greet text-center p-6">
         <div id="greetContent">
-            <h1 >HI, I'm Banana Nuget.</h1>
-            <h1 >I'm full-stack web developer.</h1>
+            <h1 class="text-4xl font-bold">HI, I'm Banana Nuget.</h1>
+            <h1 class="text-2xl">I'm a full-stack web developer.</h1>
         </div>
     </div>
-    <div class="aboutMe" id="aboutMe">
-        <div id="leftSide">
-            <img src="./assets/banana.png" alt="BananaImage">
+
+    <nav class="bg-yellow-500 p-4">
+        <div class="container mx-auto flex justify-center">
+            <a href="#greetContent" class="text-white px-4">Home</a>
+            <a href="#aboutMe" class="text-white px-4">About Me</a>
+            <a href="#expertice" class="text-white px-4">Expertise</a>
+            <a href="#experience" class="text-white px-4">Experience</a>
+            <a href="#course" class="text-white px-4">Courses</a>
+            <a href="#contact" class="text-white px-4">Contact</a>
         </div>
-        <div id="rightSide">
-            <h2>Who this guy?</h2>
-            <p>
+    </nav>
+
+    <div class="aboutMe flex p-6" id="aboutMe">
+        <div id="leftSide" class="w-1/2">
+            <img src="./assets/banana.png" alt="BananaImage" class="rounded shadow-lg">
+        </div>
+        <div id="rightSide" class="w-1/2 pl-6">
+            <h2 class="text-2xl font-semibold">Who is this guy?</h2>
+            <p class="mt-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
 
-    <div class="orderedlist" id="expertice">
-        <h2>
-            Programing Language Expertice
-        </h2>
-        <ol>
+    <div class="orderedlist p-6" id="expertice">
+        <h2 class="text-2xl font-semibold">Programming Language Expertise</h2>
+        <ol class="list-decimal list-inside mt-2">
             <li>C++ - intermediate</li>
             <li>Python - advanced</li>
             <li>Java - basic</li>
-            <li>Javascript - basic</li>
+            <li>JavaScript - basic</li>
         </ol>
     </div>
 
-    <div class="unorderedList" id="experience">
-        <h2>Internship Experience</h2>
-        <ul>
+    <div class="unorderedList p-6" id="experience">
+        <h2 class="text-2xl font-semibold">Internship Experience</h2>
+        <ul class="list-disc list-inside mt-2">
             <li>Pakthani.id</li>
             <li>Pertamina New Venture</li>
         </ul>
     </div>
 
-    <div class="course">
-        <h2>Course or Unformal Study I Have Finished It</h2>
-        <table border="1">
-            <tr>
-                <th>Type</th>
-                <th>Name</th>
-                <th>Organizer</th>
-            </tr>
-            <tr>
-                <td>SIB</td>
-                <td>Bangkit Academy</td>
-                <td>Google, Gojek, Tokopedia dan Traveloka</td>
-            </tr>
-            <tr>
-                <td rowspan="3">Course</td>
-                <td>DeepLearning.AI TensorFlow Developer</td>
-                <td rowspan="2">DeepLearning.AI</td>
-            </tr>
-            <tr>
-                <!-- <td>Course</td> -->
-                <td>TensorFlow: Data and Deployment</td>
-                <!-- <td>DeepLearning.AI</td> -->
-            </tr>
-            <tr>
-                <!-- <td>Course</td> -->
-                <td> Memulai Pemrograman Dengan Python</td>
-                <td>Dicoding</td>
-            </tr>
+    <div class="course p-6" id="course">
+        <h2 class="text-2xl font-semibold">Courses or Informal Studies I Have Finished</h2>
+        <table class="min-w-full border border-gray-300 mt-2">
+            <thead>
+                <tr>
+                    <th class="border border-gray-300 p-2">Type</th>
+                    <th class="border border-gray-300 p-2">Name</th>
+                    <th class="border border-gray-300 p-2">Organizer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-300 p-2">SIB</td>
+                    <td class="border border-gray-300 p-2">Bangkit Academy</td>
+                    <td class="border border-gray-300 p-2">Google, Gojek, Tokopedia, and Traveloka</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-2" rowspan="3">Course</td>
+                    <td class="border border-gray-300 p-2">DeepLearning.AI TensorFlow Developer</td>
+                    <td class="border border-gray-300 p-2" rowspan="2">DeepLearning.AI</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-2">TensorFlow: Data and Deployment</td>
+                </tr>
+                <tr>
+                    <td class="border border-gray-300 p-2">Memulai Pemrograman Dengan Python</td>
+                    <td class="border border-gray-300 p-2">Dicoding</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
-    <div>
-
-    </div>
-
-    <div class="contact">
-        <h2>NEED MY SERVICE?</h2>
+    <div class="contact p-6" id="contact">
+        <h2 class="text-2xl font-semibold">NEED MY SERVICE?</h2>
         <div>
-            <form action="/action_page.php">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="e.g. Banana Nuget"><br>
-                <label for="lname">Email:</label><br>
-                <input type="text" id="lname" name="lname" value="e.g. Banana@nuget.com"><br><br>
-
-                <label for="service">Choose your service:</label>
-                <select id="service" name="service">
-                <option value="homework">Make Homework</option>
-                <option value="debug">Debug My Code</option>
-                <option value="custom">Custom Request</option>
+            <form action="/action_page.php" class="mt-4">
+                <label for="name" class="block">Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Banana Nuget" class="border border-gray-300 p-2 w-full mt-1">
+                
+                <label for="lname" class="block mt-4">Email:</label>
+                <input type="text" id="lname" name="lname" placeholder="e.g. Banana@nuget.com" class="border border-gray-300 p-2 w-full mt-1">
+                
+                <label for="service" class="block mt-4">Choose your service:</label>
+                <select id="service" name="service" class="border border-gray-300 p-2 w-full mt-1">
+                    <option value="homework">Help Homework</option>
+                    <option value="debug">Debug My Code</option>
+                    <option value="custom">Custom Request</option>
                 </select>
 
-                <h3>if i want to reach you, when u available?</h3>
+                <h3 class="mt-4">If I want to reach you, when are you available?</h3>
                 <input type="checkbox" id="weekday" name="weekday" value="weekday">
                 <label for="weekday"> Weekday</label><br>
                 <input type="checkbox" id="weekend" name="weekend" value="weekend">
                 <label for="weekend">Weekend</label><br><br>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="bg-yellow-500 text-white p-2 rounded mt-4">
             </form> 
         </div>
     </div>
 
-    <div>
-        <h3>Random Video With Auto Play</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/k13E68cn1xM?autoplay=1&mute=1" title="YouTube video player" ></iframe>
+    <div class="p-6">
+        <h3 class="text-2xl font-semibold">Random Video With Auto Play</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k13E68cn1xM?autoplay=1&mute=1" title="YouTube video player" class="mt-2"></iframe>
     </div>
 
 </body>
